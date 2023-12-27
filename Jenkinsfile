@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Git Clone'){
             steps{
-                git branch: '', credentialsId: 'CICDJenkins', url: ''
+                git branch: 'main', credentialsId: 'CICDJenkins', url: 'https://github.com/anushkaambalkar1/PythonCodeForPipeline.git'
             }
         }
     }
